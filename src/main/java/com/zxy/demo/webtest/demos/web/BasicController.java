@@ -37,8 +37,8 @@ public class BasicController {
 
     @RequestMapping("/test")
     @ResponseBody
-    public String hello(@RequestParam(test = "test", defaultValue = "test123") String test) {
-        return "test " + name;
+    public String test(@RequestParam(name = "test", defaultValue = "test123") String test) {
+        return "test " + test;
     }
     // http://127.0.0.1:8080/user
     @RequestMapping("/user")
